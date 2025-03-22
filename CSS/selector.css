@@ -1,0 +1,22 @@
+#test {
+  color: #d02222;
+  letter-spacing: 7px;
+  word-spacing: 25px;
+}
+
+#t1 {
+  color: rgb(207, 134, 17);
+}
+
+/* #sudo::first-letter{
+    font-size: 65px;
+    color: blueviolet;
+}
+#sudo::first-line{
+    color: #d02222;
+    
+} */
+#sudo:hover {
+  color: rgb(202, 23, 23);
+  font-size: 40px;
+}
