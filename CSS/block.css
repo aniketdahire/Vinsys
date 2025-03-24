@@ -1,0 +1,25 @@
+p {
+  border: 5px solid rgb(220, 213, 5);
+  width: fit-content;
+  display: inline;
+  margin: 30px;
+  margin-top: 20px;
+  background-color: ;
+}
+
+.block1 {
+  margin-top: 30px;
+}
+
+a {
+  border: 10px solid red;
+  margin: 1px;
+  padding: 10px;
+  height: 80px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.anchors {
+  margin: 80px;
+}
