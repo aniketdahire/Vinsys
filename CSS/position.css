@@ -1,0 +1,62 @@
+.parent {
+  position: relative;
+  width: 600px;
+  height: 650px;
+  border-style: solid;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  margin-left: 450px;
+  margin-top: 10px;
+  
+}
+
+.child1 {
+  top: 0;
+  bottom: 0;
+  
+}
+
+.child2 {
+  top: 0;
+  right: 0;
+}
+
+.child3 {
+  bottom: 0;
+  left: 0;
+}
+
+.child4 {
+  bottom: 0;
+  right: 0;
+}
+
+.child5 {
+  top: 45%;
+  left: 45%;
+}
+
+.child {
+  position: absolute;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  width: 70px;
+  height: 60px;
+  border-style: solid;
+  text-align: center;
+  box-sizing: content-box;
+  
+}
+
+header {
+  text-align: center;
+}
