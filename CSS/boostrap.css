@@ -1,0 +1,17 @@
+.container {
+  border: solid red 10px;
+}
+
+/* .row {
+  border: 8px solid green;
+  /* margin: 10px; */
+
+.col-3 {
+  border: 5px solid orange;
+  /* margin: 10px; */
+}
+
+.row {
+  border: 10px solid blue;
+  /* width: fit-content; */
+}

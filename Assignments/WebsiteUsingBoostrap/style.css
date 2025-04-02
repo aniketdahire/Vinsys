@@ -1,0 +1,35 @@
+.header {
+    background-color: #f4a261; /* Light Orange */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+.navbar-custom {
+    background-color: #e9f5db; /* Light Green */
+    padding: 10px;
+    text-align: center;
+}
+.navbar-custom a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: black;
+    font-weight: bold;
+}
+.sidebar {
+    background-color: #cce5ff; /* Light Blue */
+    padding: 20px;
+    height: 100%;
+    width: 60%;
+    margin-left: 44%;
+    
+}
+.footer {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
