@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/CSS/addToCart.css" />
+  </head>
+  <body>
+    <h1 id="hl">Add to cart</h1>
+
+    <div class="container">
+      <div class="button">
+        <button onclick="addedToCart(1)">Add</button>
+        <button onclick="addedToCart(2)">1+1Offer</button>
+        <button onclick="addToWishlist()">Wishlist</button>
+
+        <div class="status" id="cartStatus">
+          <h3 id="message" class="cart-msg"></h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="/JavaScript/addToCart.js"></script>
+  </body>
+</html>
