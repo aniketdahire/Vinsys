@@ -54,4 +54,43 @@ input[type="text"] {
   }
 }
 
+.win {
+  color: green;
+  font-weight: bold;
+}
+.lose {
+  color: red;
+  font-weight: bold;
+}
+.tie {
+  color: orange;
+  font-weight: bold;
+}
 
+#choiceMessage {
+  font-weight: bold;
+}
+
+#winimage {
+  margin-left: 25%;
+}
+
+/* #message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ae0e0e;
+} */
+
+/* #choiceMessage {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #181919;
+  font-weight: bold;
+}
+
+#resultMessage {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ec9316;
+  font-weight: bold;
+} */

@@ -1,30 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bat Ball Stump Game</title>
-    <link rel="stylesheet" href="/Assignments/batBallStumpGame/batBallStumpGame.css" />
+    <link
+      rel="stylesheet"
+      href="/Assignments/batBallStumpGame/batBallStumpGame.css"
+    />
   </head>
   <body>
     <h1>Bat Ball Stump</h1>
 
     <div class="container">
       <div class="buttons">
-        <button onclick="bat()">Bat</button>
-        <button onclick="ball()">Ball</button>
-        <button onclick="stump()">Stump</button>
+        <img
+          src="/Assignments/batBallStumpGame/Assets/bat.png"
+          width="100px"
+          alt="bat"
+          onclick="bat()"
+        />
+        <img
+          src="/Assignments/batBallStumpGame/Assets/ball.png"
+          width="100px"
+          alt="ball"
+          onclick="ball()"
+        />
+        <img
+          src="/Assignments/batBallStumpGame/Assets/stump.png"
+          width="100px;"
+          alt="stump"
+          onclick="stump()"
+        />
       </div>
+
       <div class="result" id="result-msg">
-        <h3 id="message" class="msg">Result:</h3>
+        <h3>Result:</h3>
+        <p id="choiceMessage"></p>
+        <p id="resultMessage"></p>
       </div>
+
       <input type="text" id="winresult" readonly />
       <br />
-      <button id="reset" onclick="re()">Reset</button>
+      <button id="reset" onclick="re()">Play Again!</button>
+      <div id="winimage">
+        <img
+          id="winAnimation"
+          src="/Assignments/batBallStumpGame/Assets/winingimage.gif"
+          alt="Win Animation"
+          width="250px"
+          ;height="10px"
+        />
+      </div>
     </div>
 
     <script src="/Assignments/batBallStumpGame/batBallStumpGame.js"></script>
   </body>
 </html>
-

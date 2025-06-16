@@ -35,9 +35,15 @@ function getresult(humanValue) {
   compchoise(computerValue);
 
   let resultText = "";
+  const choices = ["Ball", "Bat", "Stump"];
+
+  const choiceMsg = `You: ${choices[humanValue]}, Computer: ${choices[computerValue]}`;
+  let resultClass = "";
+
   if (humanValue === computerValue) {
     tieCount++;
     resultText = "It's a tie!";
+    resultClass = "tie";
   } else if (
     (humanValue === 0 && computerValue === 2) ||
     (humanValue === 1 && computerValue === 0) ||
@@ -45,14 +51,34 @@ function getresult(humanValue) {
   ) {
     winCount++;
     resultText = "You win!";
+
+    resultClass = "win";
   } else {
     loseCount++;
     resultText = "You lose!";
+    resultClass = "lose";
   }
 
-  document.getElementById(
-    "message"
-  ).innerText = `You: ${humanValue}, Computer: ${computerValue}  ${resultText}`;
+  // Update DOM
+  const choiceMessage = document.getElementById("choiceMessage");
+  const resultMessage = document.getElementById("resultMessage");
+  const winAnimation = document.getElementById("winAnimation");
+
+  choiceMessage.innerText = choiceMsg;
+  resultMessage.innerText = resultText;
+
+  resultMessage.className = "";
+  resultMessage.classList.add(resultClass);
+
+  // Show/hide GIF for win
+  if (resultClass === "win") {
+    winAnimation.src = "/Assignments/batBallStumpGame/Assets/winingimage.gif"; // Path to your gif
+    winAnimation.style.display = "block"; // Show GIF
+  } else {
+    winAnimation.style.display = "none"; // Hide GIF for lose/tie
+    winAnimation.src = "";
+  }
+
   document.getElementById(
     "winresult"
   ).value = `Wins: ${winCount}, Losses: ${loseCount}, Ties: ${tieCount}`;
@@ -63,6 +89,14 @@ function re() {
   loseCount = 0;
   tieCount = 0;
 
-  document.getElementById("message").innerText = "Result:";
+  document.getElementById("choiceMessage").innerText = "";
+  const resultMsg = document.getElementById("resultMessage");
+  resultMsg.innerText = "";
+  resultMsg.className = "";
+
+  const winAnimation = document.getElementById("winAnimation");
+  winAnimation.style.display = "none"; // Hide GIF
+  winAnimation.src = ""; // Reset GIF source
+
   document.getElementById("winresult").value = "";
 }
